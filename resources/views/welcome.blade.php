@@ -61,6 +61,23 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+
+             <style type="text/css">
+        img {
+    opacity: 0.3;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+body {
+    background: url(images/dos.jpg) no-repeat center top;
+        max-width: 100%;
+   
+
+}
+
+    </style>
         </style>
     </head>
     <body>
@@ -81,17 +98,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                     <marquee direction="up"> 
+  
+                  <h1> Fitness Pantry</h1>
+
+                   
+                </marquee>
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+               
             </div>
         </div>
     </body>

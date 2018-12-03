@@ -13,29 +13,48 @@
   </head>
   <body class="is-preload">
 
+
+     <style type="text/css">
+        
+    
+
+
+
+table, th, td {
+   border: 1px solid black;
+}
+
+  
+
+
+
+
+    </style>
+
+
     <!-- Header -->
       <div id="header">
 
         <div class="top">
 
+
           <!-- Logo -->
             <div id="logo">
               <span class="image avatar48"><img src="images/logo.png" alt="" /></span>
               <h1 id="title">FITNESS PANTRY</h1>
-              <p>Hyperspace Engineer</p>
+              <p></p>
             </div>
-
-          <!-- Nav -->
-            <nav id="nav">
+      <nav id="nav">
               <ul>
-                <li><a href="{{ url('/principal') }}" id="top-link"><span class="icon fa-home">Home</span></a></li>
-                <li><a href="{{ url('/products') }}" id="portfolio-link"><span class="icon fa-th">Products</span></a></li>
-                <li><a href="{{ url('/reports') }}" id="portfolio-link"><span class="icon fa-th">Reports</span></a></li>
-                <li><a href="#about" id="about-link"><span class="icon fa-user">About Me</span></a></li>
-                <li><a href="#contact" id="contact-link"><span class="icon fa-envelope">Contact</span></a></li>
+                <li><a href="{{ url('/principal') }}" id="top-link"><span class="icon fa-home">Principal</span></a></li>
+                <li><a href="{{ url('/products') }}" id="portfolio-link"><span class="icon fa-th">Productos</span></a></li>
+                <li><a href="{{ url('/reports') }}" id="portfolio-link"><span class="icon fa-th">Reportes</span></a></li>
+                <li><a href="{{ url('/grapro') }}" id="portfolio-link"><span class="icon fa-th">Graficas Productos</span></a></li>
+                <li><a href="{{ url('/grarepo') }}" id="portfolio-link"><span class="icon fa-th">Graficas Sensores</span></a></li>
+                <li><a href="{{ url('/pictures') }}" id="about-link"><span class="icon fa-user">Reconocimiento</span></a></li>
+                <li><a href="#{{ url('/pictures') }}" id="contact-link"><span class="icon fa-envelope">Contact</span></a></li>
               </ul>
             </nav>
-
         </div>
 
         <div class="bottom">
@@ -58,10 +77,21 @@
 
         <!-- Intro -->
           <section id="top" class="">
+            <img src="images/Amazon.jpg">
             <div class="container">
 
-            
-        <h2>Productos Comprados</h2>
+
+<div id="navbarCollapse" class="collapse navbar-collapse"> 
+   <ul class="nav navbar-nav"> 
+    <li class="active"><a href="{{ url('/products/create') }}">Hacer pedido.</a></li> 
+   </ul> 
+   <ul class="nav navbar-nav navbar-right"> 
+
+
+
+
+          
+         <h2>Productos Comprados</h2>
           <div class="table-responsive">
             <table class="table table-striped table-sm">
               <thead>
@@ -71,6 +101,9 @@
       <td>#</td>
         <td>Nombre del producto</td>
         <td>Precio del producto</td>
+         <td>Ranura</td>
+          <td>Fecha</td>
+
         
       </tr>
     </thead>
@@ -80,6 +113,8 @@
       <td>{{ $product->id }}</td>
       <td>{{ $product->name }}</td>
       <td>{{ $product->pricing }}</td>
+       <td>{{ $product->slot }}</td>
+        <td>{{ $product->created_at }}</td>
       
           </tr>
     @endforeach

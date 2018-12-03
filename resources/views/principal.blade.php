@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>Principal</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,22 +22,25 @@
 				<div class="top">
 
 					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Jane Doe</h1>
-							<p>Hyperspace Engineer</p>
-						</div>
+						    <div id="logo">
+              <span class="image avatar48"><img src="images/logo.png" alt="" /></span>
+              <h1 id="title">FITNESS PANTRY</h1>
+              <p></p>
+            </div>
+
 
 					<!-- Nav -->
 						<nav id="nav">
-							<ul>
-                <li><a href="{{ url('/principal') }}" id="top-link"><span class="icon fa-home">Home</span></a></li>
-                <li><a href="{{ url('/products') }}" id="portfolio-link"><span class="icon fa-th">Products</span></a></li>
-                <li><a href="{{ url('/reports') }}" id="portfolio-link"><span class="icon fa-th">Reports</span></a></li>
-                <li><a href="#about" id="about-link"><span class="icon fa-user">About Me</span></a></li>
-                <li><a href="#contact" id="contact-link"><span class="icon fa-envelope">Contact</span></a></li>
+              <ul>
+                <li><a href="{{ url('/principal') }}" id="top-link"><span class="icon fa-home">Principal</span></a></li>
+                <li><a href="{{ url('/products') }}" id="portfolio-link"><span class="icon fa-th">Productos</span></a></li>
+                <li><a href="{{ url('/reports') }}" id="portfolio-link"><span class="icon fa-th">Reportes</span></a></li>
+                <li><a href="{{ url('/grapro') }}" id="portfolio-link"><span class="icon fa-th">Graficas Productos</span></a></li>
+                <li><a href="{{ url('/grarepo') }}" id="portfolio-link"><span class="icon fa-th">Graficas Sensores</span></a></li>
+                <li><a href="{{ url('/pictures') }}" id="about-link"><span class="icon fa-user">Reconocimiento</span></a></li>
+                <li><a href="#{{ url('/pictures') }}" id="contact-link"><span class="icon fa-envelope">Contact</span></a></li>
               </ul>
-						</nav>
+            </nav>
 
 				</div>
 
@@ -64,44 +67,34 @@
 				<!-- Intro -->
 					<section id="top" class="one dark cover">
 						<div class="container">
+							<img src="images/dieta.jpg">
 
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
-							</header>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
-							</footer>
-
-						</div>
-					</section>
+							
 
 				<!-- Portfolio -->
 					<section id="portfolio" class="two">
 						<div class="container">
 
 							<header>
-								<h2>Portfolio</h2>
+								<h2>Quiénes somos</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<p>Cambiar la vida de las personas ofreciendo los mejores productos, asi mejorar la calidad de vida y binestar.
+								</p>
+
+							</div>
+						</section>
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/d1.jpg" alt="" /></a>
 										<header>
 											<h3>Ipsum Feugiat</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/d2.jpg" alt="" /></a>
 										<header>
 											<h3>Rhoncus Semper</h3>
 										</header>
@@ -109,13 +102,13 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/d3.jpg" alt="" /></a>
 										<header>
 											<h3>Magna Nullam</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/d4.jpg" alt="" /></a>
 										<header>
 											<h3>Natoque Vitae</h3>
 										</header>
@@ -123,13 +116,13 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/d5.jpg" alt="" /></a>
 										<header>
 											<h3>Dolor Penatibus</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/d6.jpg" alt="" /></a>
 										<header>
 											<h3>Orci Convallis</h3>
 										</header>
@@ -145,17 +138,13 @@
 						<div class="container">
 
 							<header>
-								<h2>About Me</h2>
+								<h2>Fitness Pantry</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/bote.png" alt="" /></a>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<p>Lo que estamos ofreciendo a nuestros clientes es la posibilidad de ahorrar el tiempo de evitar ir a cualquier centro comercial a comprar productos que ocupen, así como el siempre tener estos productos abastecidos, es decir el cliente siempre tendrá disponible el producto que el desee.
+</p>
 
 						</div>
 					</section>
@@ -165,13 +154,10 @@
 						<div class="container">
 
 							<header>
-								<h2>Contact</h2>
+								<h2>Contacto</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							<p>En este apartdo puedes enviar alguna duda o sugerencia respecto al producto adquirido, Gracias por la antecion.</p>
 
 							<form method="post" action="#">
 								<div class="row">

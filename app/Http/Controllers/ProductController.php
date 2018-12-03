@@ -46,6 +46,8 @@ class ProductController extends Controller
         $products->name = $request->name;
        
         $products->pricing = $request->pricing;
+
+         $products->slot = $request->slot;
         
 
 

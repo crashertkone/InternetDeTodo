@@ -22,17 +22,18 @@
             <div id="logo">
               <span class="image avatar48"><img src="images/logo.png" alt="" /></span>
               <h1 id="title">FITNESS PANTRY</h1>
-              <p>Hyperspace Engineer</p>
+              <p></p>
             </div>
 
-          <!-- Nav -->
-            <nav id="nav">
+              <nav id="nav">
               <ul>
-                <li><a href="{{ url('/principal') }}" id="top-link"><span class="icon fa-home">Home</span></a></li>
-                <li><a href="{{ url('/products') }}" id="portfolio-link"><span class="icon fa-th">Products</span></a></li>
-                <li><a href="{{ url('/reports') }}" id="portfolio-link"><span class="icon fa-th">Reports</span></a></li>
-                <li><a href="#about" id="about-link"><span class="icon fa-user">About Me</span></a></li>
-                <li><a href="#contact" id="contact-link"><span class="icon fa-envelope">Contact</span></a></li>
+                <li><a href="{{ url('/principal') }}" id="top-link"><span class="icon fa-home">Principal</span></a></li>
+                <li><a href="{{ url('/products') }}" id="portfolio-link"><span class="icon fa-th">Productos</span></a></li>
+                <li><a href="{{ url('/reports') }}" id="portfolio-link"><span class="icon fa-th">Reportes</span></a></li>
+                <li><a href="{{ url('/grapro') }}" id="portfolio-link"><span class="icon fa-th">Graficas Productos</span></a></li>
+                <li><a href="{{ url('/grarepo') }}" id="portfolio-link"><span class="icon fa-th">Graficas Sensores</span></a></li>
+                <li><a href="{{ url('/pictures') }}" id="about-link"><span class="icon fa-user">Reconocimiento</span></a></li>
+                <li><a href="#{{ url('/pictures') }}" id="contact-link"><span class="icon fa-envelope">Contact</span></a></li>
               </ul>
             </nav>
 
@@ -70,7 +71,7 @@
           <td>#</td>   
           <td>slot 1</td>   
           <td>slot 2</td>   
-          <td>hora</td>
+          <td>time</td>
         
       </tr>
      
@@ -83,6 +84,8 @@
       <td>{{ $date->id }}</td>
       <td>{{ $date->datos }}</td>
       <td>{{ $date->dato1 }}</td>
+      <td>{{ $date->created_at }}</td>
+
 
       
           </tr>

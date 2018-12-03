@@ -1,3 +1,4 @@
+<img src="images/una.jpg">
 <form method="POST" action="{{ route('dates.store') }}"  role="form">
 							{{ csrf_field() }}
 							

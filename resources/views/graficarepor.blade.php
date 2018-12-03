@@ -36,75 +36,45 @@
   </div> 
  </nav> 
 
+ 
 
-<div class="container">
-
+ 
         <div class="panel panel-primary">
-
-         <div class="panel-heading">Representacion por medio de graficos.</div>
-
+ 
+         <div class="panel-heading"></div>
+ 
           <div class="panel-body">    
             <div class="row">
             <div class="col-md-6"> 
-                <h1>Día</h1>
-               {!! $day_chart->html() !!}
-            </div>
-
-            <br/><br/>
-
-            
-            <div class="panel-body">    
-            <div class="row">
-            <div class="col-md-6"> 
-                <h1>Mes</h1>
                {!! $chart->html() !!}
             </div>
-
+ 
             <br/><br/>
 
-
-            <div class="panel-body">    
-            <div class="row">
-            <div class="col-md-6"> 
-                <h1>Año</h1>
-               {!! $me_chart->html() !!}
-            </div>
-
-            <br/><br/>
-
-<br/><br/>
-
-            <div class="panel-body">    
-            <div class="row">
-
-            <div class="col-md-6"> 
-                <h1>Mas Comprado</h1>
-               {!! $pie_chart->html() !!}
-            </div>
-
-         
-           
-
-
-
-         </div>
-
-         
-
-
-    {!! Charts::scripts() !!}
-    {!! $chart->script() !!}
-
-    {!! $day_chart->script() !!}
-
-     {!! $pie_chart->script() !!}
-
-      {!! $me_chart->script() !!}
+		</div>
  
-   
+        </div>
+
+        
+		</div>
+ 
+    </div>
+
 
  
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+
+ 
+</body> 
+ 
+</html>
+
+
+
+             {!! Charts::scripts() !!}
+   	 {!! $chart->script() !!}
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
  <script src="http://barcode.htmlcodeplay.com/bootstrap/js/bootstrap.min.js"></script> 
 </body> 
  

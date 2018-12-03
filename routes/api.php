@@ -19,6 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get('/data', function(){
-	return ['value' => rand(0, 100), 'value2' => 50];
+	return ['value' => rand(180, 210), 'value2' => 50];
 })->name('data');
 

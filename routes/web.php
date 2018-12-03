@@ -42,7 +42,12 @@ Route::get('/pictures', function () {
     return view('pictures');
 });
 
-Route::get('charts', 'ChartController@index')->name('chart.index');
+Route::get('charts', 'ChartController@index')->name('chart.prod');
+
+Route::get('grapro', 'GraproController@index')->name('grapro.index');
+
+Route::get('grarepo', 'GrarepoController@index')->name('grarepo.index');
+
 
 
 
